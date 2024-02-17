@@ -4,6 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../CSS_global/casas_style.css">
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet">
@@ -14,9 +15,50 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
         <style>
-        img.iconodesc {
-            max-width: 15px !important;
-        }
+        body{
+    background-color: aliceblue;
+}
+img.iconodesc {
+    max-width: 25px !important;
+}
+.tabla_caracteristicas{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 0px;
+}
+.div_in_tabla_caract{
+    background-color: #fff;
+    border-radius:16px;
+    display:flex;
+    padding:15px;
+    box-shadow:5px 5px 15px #7d7f83;
+}
+.tabla_caracteristicas div div{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+}
+.tabla_caracteristicas p{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.parrafo{
+    width: 80%;
+    justify-content: center;
+    display: inline-block;
+}
+.parrafo p{
+    text-align: justify;
+}
+/*cambiar todas las fuentes*/
+p, h1, h2, h3, a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    font-weight: bold;
+}
     </style>
 
     </head>
@@ -66,69 +108,76 @@
             </button>
         </div>
 
-        <div>
-            <h1> Elegant apartament, a 5' de la platja ia 35' de Barcelona </h1>
+        <div style="text-align: center;">
+        <div style="width: 80%;justify-content: center;display:inline-block">
+            <h1 style="margin-top: 30px;"> Elegant apartament, a 5' de la platja ia 35' de Barcelona </h1>
             <h2> Allotjament sencer: pis a Mataró, Espanya </h2>
             <p> Allotjament a Mataró</p>
-
+        </div>
             <br>
-            <table class="tabla_caracteristicas">
-                <tr>
-                    <td>
+            <div class="tabla_caracteristicas">
+                <div class="div_in_tabla_caract">
+                    <div>
                         <img src="imagenes/Platja logo.png" alt="Platja aprop"
                             class="iconodesc">
-                        <p> Accés a la platja </p>
-                    </td>
-                    <td>
+                        <p> Platja </p>
+                    </div>
+                    <div style="border-left: double; border-right: double; border-color: rgb(161, 163, 164);">
                         <img src="imagenes/Cuina logo.png" alt="Amb cuina"
                             class="iconodesc">
                         <p> Cuina </p>
-                    </td>
-                    <td>
+                    </div>
+                    <div>
                         <img src="imagenes/WiFi logo.png" alt="Amb WiFi"
                             class="iconodesc">
                         <p> WiFi </p>
-                    </td>
-                </tr>
-            </table>
-            <div>
-                <img src="imagenes/Persona logo.webp" alt="2 viatgers"
-                    class="iconodesc">
-                <p> 2 Viatgers </p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="imagenes/Bany logo.webp" alt="1 Bany"
-                    class="iconodesc">
-                <p> 1 Bany</p>
+            <div class="tabla_caracteristicas" style="margin-top: 15px;">
+                <div class="div_in_tabla_caract">
+                    <div>
+                        <img src="imagenes/Persona logo.webp" alt="2 viatgers"
+                         class="iconodesc">
+                      <p> 2 Viatgers </p>
+                    </div>
+                    <div style="border-left: double; border-color: rgb(161, 163, 164);">
+                        <img src="imagenes/Bany logo.webp" alt="1 Bany"
+                            class="iconodesc">
+                        <p> 1 Bany</p>
+                    </div>
+                </div>
             </div>
 
-            <br>
-            <h2> Sobre mi </h2>
-            <br>
-            <p> Em dic Nuria i sóc la vostra amfitriona. Em complau donar-vos la
+            <br> 
+                <h2> Sobre mi </h2>
+                <br>
+            <div class="parrafo">  
+                <p> Em dic Nuria i sóc la vostra amfitriona. Em complau donar-vos la
                 benvinguda a la meva llar i espero que
                 tingueu una estada memorable.</p>
-            <br>
-            <p> Sóc una persona ordenada i responsable. Disfruto del meu temps
+                <br>
+                <p> Sóc una persona ordenada i responsable. Disfruto del meu temps
                 lliure llegint llibres i mirant sèries. Em
                 considero una persona alegre i responsable.</p>
-            <br>
-            <p> El meu objectiu principal és que se sentin còmodes i gaudeixin
+                <br>
+                <p> El meu objectiu principal és que se sentin còmodes i gaudeixin
                 al màxim de la seva estada. M'encantaria
                 ajudar-los a descobrir i compartir amb vostès
                 el meu coneixement sobre la zona. Estic disponible per respondre
                 a les seves preguntes, oferir-los
                 recomanacions i ajudar-los a planificar les seves
                 activitats.</p>
-            <br>
-            <p> M'agradaria conèixer una mica més sobre els vostres interessos i
+                <br>
+                <p> M'agradaria conèixer una mica més sobre els vostres interessos i
                 preferències per poder adaptar el meu
                 servei a les vostres necessitats. Si us plau, no dubteu a
                 compartir amb mi les vostres expectatives i qualsevol informació
                 que considereu rellevant.</p>
-            <br>
-            <p><strong>Contacte:</strong> exemple@casa.com</p>
-            <br>
+                <br>
+                <p><strong>Contacte:</strong> exemple@casa.com</p>
+                <br>
+            </div>
         </div>
 
     </body>

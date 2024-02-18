@@ -72,6 +72,14 @@ const restaurantes = [
         { nombre: "Re-Read (Llibreria de segona mà) (En aquest establiment pots bescanviar els teus punts de l'aplicació)", latitud: 41.53767384948376, longitud: 2.4451462094280334 }
     ];
 
+    const bicing = [
+        
+        { nombre: "Bicing estació", latitud: 41.53346952896756, longitud: 2.4455715613457687 },
+        { nombre: "KE d KE (En aquest establiment pots bescanviar els teus punts de l'aplicació)", latitud: 41.54457333937012, longitud: 2.4369605770869875 },
+        { nombre: "Terra Alta Restaurant (En aquest establiment pots bescanviar els teus punts de l'aplicació)", latitud: 41.543196368353705, longitud: 2.435462528844411 },
+        { nombre: "Re-Read (Llibreria de segona mà) (En aquest establiment pots bescanviar els teus punts de l'aplicació)", latitud: 41.53767384948376, longitud: 2.4451462094280334 }
+    ];
+
 // Crear y agregar marcadores para cada restaurante
 restaurantes.forEach(restaurante => {
     L.marker([restaurante.latitud, restaurante.longitud]).addTo(mymap)

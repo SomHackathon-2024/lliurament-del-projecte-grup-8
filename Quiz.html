@@ -5,93 +5,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="quiz.js"></script>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        form div.box{
+            background-color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 8px 8px 20px rgb(78, 81, 83);
+            margin-bottom: 20px;
+        }
+        form div{
+            text-align: center;
+            justify-content: center;
+        }
+        form #button input{
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: #7e0808;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    box-shadow: 3px 3px 10px black;
+    padding-top:8px;
+    padding-bottom:8px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 50px;
+        }
+        p, h1, h2, h3, a, label{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+    .box p{
+        text-align: left;
+        padding-left: 30px;
+    }
+    </style>
 </head>
 
 <body>
     <form>
+    <div class="box">
         <h2>Quan surto del meu nucli urbà, busco:</h2>
         <p>
-            <input type="radio" id="familia" name="tipoturistas" value="Familiar">
+            <input type="radio" id="familia" name="q1" value="Familiar">
             <label for="Familiar">Visitar llocs amb els meus companys</label><br>
-            <input type="radio" id="relax" name="tipoturistas" value="Relax">
+            <input type="radio" id="relax" name="q1" value="Relax">
             <label for="Relax">Tranquilitat </label><br>
-            <input type="radio" id="joves" name="tipoturistas" value="Joves">
+            <input type="radio" id="joves" name="q1" value="Joves">
             <label for="Joves">Moure'm per tot arreu</label><br>
-            <input type="radio" id="explorador" name="tipoturistas" value="Explorador">
+            <input type="radio" id="explorador" name="q1" value="Explorador">
             <label for="Explorador">Perdre'm pels llocs!</label><br>
         </p>
-    </form>
+    </div>
 
-    <form>
+    <div class="box">
         <h2>On millor es menja és:</h2>
         <p>
-            <input type="radio" id="familia" name="tipoturistas" value="Familiar">
+            <input type="radio" id="familia" name="q2" value="Familiar">
             <label for="Familiar"> Al fer un picnic al parc</label><br>
-            <input type="radio" id="relax" name="tipoturistas" value="Relax">
+            <input type="radio" id="relax" name="q2" value="Relax">
             <label for="Relax"> En un restaurant d'alta gamma</label><br>
-            <input type="radio" id="joves" name="tipoturistas" value="Joves">
+            <input type="radio" id="joves" name="q2" value="Joves">
             <label for="Joves"> On s'innova culinariament</label><br>
-            <input type="radio" id="explorador" name="tipoturistas" value="Explorador">
+            <input type="radio" id="explorador" name="q2" value="Explorador">
             <label for="Explorador"> En un restaurant casolà tradicional</label><br>
         </p>
-    </form>
+    </div>
 
-    <form>
+    <div class="box">
         <h2>La millor festa és:</h2>
         <p>
-            <input type="radio" id="familia" name="tipoturistas" value="Familiar">
+            <input type="radio" id="familia" name="q3" value="Familiar">
             <label for="Familiar"> Una per a tothom a l'aire lliure</label><br>
-            <input type="radio" id="relax" name="tipoturistas" value="Relax">
+            <input type="radio" id="relax" name="q3" value="Relax">
             <label for="Relax"> Un passeig al teu aire </label><br>
-            <input type="radio" id="joves" name="tipoturistas" value="Joves">
+            <input type="radio" id="joves" name="q3" value="Joves">
             <label for="Joves"> La de les discoteques </label><br>
-            <input type="radio" id="explorador" name="tipoturistas" value="Explorador">
+            <input type="radio" id="explorador" name="q3" value="Explorador">
             <label for="Explorador"> La que hi ha en els bars amb gent local</label><br>
         </p>
-    </form>
+    </div>
 
-    <form>
+    <div class="box">
         <h2>L'activitat cultural que més m'agrada és:</h2>
         <p>
-            <input type="radio" id="familia" name="tipoturistas" value="Familiar">
+            <input type="radio" id="familia" name="q4" value="Familiar">
             <label for="Familiar"> Anar a un museu interactiu</label><br>
-            <input type="radio" id="relax" name="tipoturistas" value="Relax">
+            <input type="radio" id="relax" name="q4" value="Relax">
             <label for="Relax"> Una bona obra de teatre </label><br>
-            <input type="radio" id="joves" name="tipoturistas" value="Joves">
+            <input type="radio" id="joves" name="q4" value="Joves">
             <label for="Joves"> Gaudir amb les festes del lloc </label><br>
-            <input type="radio" id="explorador" name="tipoturistas" value="Explorador">
+            <input type="radio" id="explorador" name="q4" value="Explorador">
             <label for="Explorador"> Una exposició d'art</label><br>
         </p>
-    </form>
+    </div>
 
-    <form>
+    <div class="box">
         <h2>Quan arribo a un lloc desconegut, necesito:</h2>
         <p>
-            <input type="radio" id="familia" name="tipoturistas" value="Familiar">
+            <input type="radio" id="familia" name="q5" value="Familiar">
             <label for="Familiar"> Un mapa i guies de la zona</label><br>
-            <input type="radio" id="relax" name="tipoturistas" value="Relax">
+            <input type="radio" id="relax" name="q5" value="Relax">
             <label for="Relax"> Informació dels parcs a prop </label><br>
-            <input type="radio" id="joves" name="tipoturistas" value="Joves">
+            <input type="radio" id="joves" name="q5" value="Joves">
             <label for="Joves"> El meu smartphone </label><br>
-            <input type="radio" id="explorador" name="tipoturistas" value="Explorador">
+            <input type="radio" id="explorador" name="q5" value="Explorador">
             <label for="Explorador"> No em cal res</label><br>
         </p>
-    </form>
+    </div>
 
-    <form>
+    <div class="box">
         <h2>El meu pla perfecte:</h2>
         <p>
-            <input type="radio" id="familia" name="tipoturistas" value="Familiar">
+            <input type="radio" id="familia" name="q6" value="Familiar">
             <label for="Familiar"> Visitar els llocs més icònics amb qui m'envolta</label><br>
-            <input type="radio" id="relax" name="tipoturistas" value="Relax">
+            <input type="radio" id="relax" name="q6" value="Relax">
             <label for="Relax"> Pasar el dia sense moure'm de la platja </label><br>
-            <input type="radio" id="joves" name="tipoturistas" value="Joves">
+            <input type="radio" id="joves" name="q6" value="Joves">
             <label for="Joves"> Anar de compres al centre comercial més gran </label><br>
-            <input type="radio" id="explorador" name="tipoturistas" value="Explorador">
+            <input type="radio" id="explorador" name="q6" value="Explorador">
             <label for="Explorador"> Fluir amb l'ambient i la gent de la ciutat</label><br>
         </p>
+    </div>
+    <div id="button">
         <input type="submit" value="Enviar">
-    </form>
+    </div>
+    </form> 
 </body>
 
 </html>

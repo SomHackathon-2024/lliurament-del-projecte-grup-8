@@ -16,7 +16,8 @@
         <div id="mapa"></div>
         <script src="js/mapa.js"></script>
         <script>
-            bicing.forEach(restaurante => {
+            // Crear y agregar marcadores para cada restaurante
+restaurantes.forEach(restaurante => {
     L.marker([restaurante.latitud, restaurante.longitud]).addTo(mymap)
         .bindPopup(restaurante.nombre);
 });

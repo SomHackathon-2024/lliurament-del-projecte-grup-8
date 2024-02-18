@@ -83,36 +83,3 @@ const restaurantes = [
         { nombre: "Bicing Rocafonda", latitud: 41.54858713971059, longitud: 2.4464377242148125 }
 
     ];
-
-// Crear y agregar marcadores para cada restaurante
-restaurantes.forEach(restaurante => {
-    L.marker([restaurante.latitud, restaurante.longitud]).addTo(mymap)
-        .bindPopup(restaurante.nombre);
-});
-// Llamamos lo mismo para el resto de constantes
-explorador.forEach(restaurante => {
-    L.marker([restaurante.latitud, restaurante.longitud]).addTo(mymap)
-        .bindPopup(restaurante.nombre);
-});
-
-familia.forEach(restaurante => {
-    L.marker([restaurante.latitud, restaurante.longitud]).addTo(mymap)
-        .bindPopup(restaurante.nombre);
-});
-
-joven.forEach(restaurante => {
-    L.marker([restaurante.latitud, restaurante.longitud]).addTo(mymap)
-        .bindPopup(restaurante.nombre);
-});
-relax.forEach(restaurante => {
-    L.marker([restaurante.latitud, restaurante.longitud]).addTo(mymap)
-        .bindPopup(restaurante.nombre);
-});
-botigues.forEach(restaurante => {
-    L.marker([restaurante.latitud, restaurante.longitud]).addTo(mymap)
-        .bindPopup(restaurante.nombre);
-});
-bicing.forEach(restaurante => {
-    L.marker([restaurante.latitud, restaurante.longitud]).addTo(mymap)
-        .bindPopup(restaurante.nombre);
-});

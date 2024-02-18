@@ -10,6 +10,6 @@ slider.oninput = function () {
   // Redondeamos hacia arriba los valores
   minuts = Math.ceil(minuts);
   diners = Math.ceil(diners);
-  outputMin.innerHTML = minuts;
-  outputDin.innerHTML = diners;
+  outputMin.innerHTML = minuts+" minuts";
+  outputDin.innerHTML = diners+"€";
 }

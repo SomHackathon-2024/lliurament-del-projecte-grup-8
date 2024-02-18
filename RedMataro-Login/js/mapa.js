@@ -75,9 +75,13 @@ const restaurantes = [
     const bicing = [
         
         { nombre: "Bicing estació", latitud: 41.53346952896756, longitud: 2.4455715613457687 },
-        { nombre: "KE d KE (En aquest establiment pots bescanviar els teus punts de l'aplicació)", latitud: 41.54457333937012, longitud: 2.4369605770869875 },
-        { nombre: "Terra Alta Restaurant (En aquest establiment pots bescanviar els teus punts de l'aplicació)", latitud: 41.543196368353705, longitud: 2.435462528844411 },
-        { nombre: "Re-Read (Llibreria de segona mà) (En aquest establiment pots bescanviar els teus punts de l'aplicació)", latitud: 41.53767384948376, longitud: 2.4451462094280334 }
+        { nombre: "Bicing Tecnocampus", latitud: 41.528902702385174, longitud: 2.4346640715993026 },
+        { nombre: "Bicing Parc Central", latitud: 41.54455954843059, longitud: 2.441100232655047 },
+        { nombre: "Bicing Parc Forestal", latitud: 41.53767384948376, longitud: 2.4451462094280334 },
+        { nombre: "Bicing Centre Natació", latitud: 41.53793455372428, longitud: 2.4524423501536434 },
+        { nombre: "Bicing Mataró Park", latitud: 41.55444165473981, longitud: 2.432800646598174 },
+        { nombre: "Bicing Rocafonda", latitud: 41.54858713971059, longitud: 2.4464377242148125 }
+
     ];
 
 // Crear y agregar marcadores para cada restaurante
@@ -105,6 +109,10 @@ relax.forEach(restaurante => {
         .bindPopup(restaurante.nombre);
 });
 botigues.forEach(restaurante => {
+    L.marker([restaurante.latitud, restaurante.longitud]).addTo(mymap)
+        .bindPopup(restaurante.nombre);
+});
+bicing.forEach(restaurante => {
     L.marker([restaurante.latitud, restaurante.longitud]).addTo(mymap)
         .bindPopup(restaurante.nombre);
 });

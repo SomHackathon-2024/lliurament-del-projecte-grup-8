@@ -3,37 +3,29 @@
 =======
 <!DOCTYPE html>
 <html lang="en">
-  <style>
-  h1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  </style>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
+  <link rel="stylesheet" href="..\CSS_global\login_form.css" />
 </head>
 <body>
-  <table> <!-- Red Mataró cabecera-->
-    <td>
-      <h1 style="color: red;">Red</h1>
-    </td>
-    <td>
-      <h1>Mataró</h1>
-    </td>
-  </table>
-  <h1 style="text-align: center;">Crea el teu compte</h1>
-  <div class="dropdown-menu" style="text-align: center;"> <!--Menu login-->
+  <div>
+    <img src="..\img_global\logo_red_mataro.png" alt="favicon-logo" style="width: 100px;">
+  </div>
+<div class="caja_formulario" style="padding-bottom: 30px;">
+  <h1 style="text-align: center;">Inicia sessió</h1>
+  <div style="text-align: center;"> <!--Menu login-->
     <form class="px-4 py-3">
       <div class="mb-3">
-        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="Correu" style="height: 30px; width: 40%;">
+        <label for="inputEmai" class="form-label">Email</label></br>
+        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="  Introdueix el teu correu">
       </div>
       <br>
       <div class="mb-3">
-        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Contrasenya" style="height: 30px; width: 40%;">
+        <label for="inputContrasenya" class="form-label">Contrasenya</label></br>
+        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="  Introdueix la teva contrasenya">
       </div>
       <br>
       <div class="mb-3">
@@ -49,13 +41,14 @@
     </form>
     <br>
     <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="#">Nou per aqui? Registra't</a>
+    <a class="dropdown-item" href="signup.html">Ets nou per aqui? Registra't</a>
     <br>
-    <a class="dropdown-item" href="#">Oblidat contrasenya?</a>
+    <a class="dropdown-item" href="#">Recupera la contrasenya</a>
   </div>
+</div>
 </body>
 <footer> <!--footer-->
-  <p style="color: gray; text-align: right;">Ajuntament de Mataró</p>
+  <p style="color: gray; text-align: center;">Ajuntament de Mataró</p>
 </footer>
 </html>
 

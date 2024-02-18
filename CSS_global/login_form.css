@@ -1,0 +1,59 @@
+body{
+    background-color: aliceblue!important;
+}
+
+div.caja_formulario{
+    background-color: #fff;
+    width: 80%;
+    display: inline-block!important;
+    justify-content: center!important;
+    border-radius: 16px;
+    box-shadow:5px 5px 15px #7d7f83;
+    margin-top: 30px;
+    padding-top:10px;
+}
+.caja_formulario a{
+    text-decoration: none;
+    color:#2f3134
+}
+.caja_formulario a:hover{
+    text-decoration: none;
+    color:#2f3134;
+    font-weight: bold;
+}
+p, h1, h2, h3, a, label{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    font-size: 24px!important;
+    font-weight: bold!important;
+}
+/*Centrar contenidos*/
+form.row.g-3 div{
+    justify-content: center;
+}
+.mb-3{
+    display: inherit;
+}
+
+/*Estilo de los elementos del formulario*/
+.caja_formulario input.form-control{
+    height: 36px; width: 70%;
+    border-width: 1px;
+    border-radius: 6px;
+}
+label.form-label{
+    display: flex;
+    text-align: left!important;
+    margin-left: 15%;
+    margin-bottom: -10px;
+}
+.caja_formulario button{
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: #7e0808;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    box-shadow: 3px 3px 10px black;
+}

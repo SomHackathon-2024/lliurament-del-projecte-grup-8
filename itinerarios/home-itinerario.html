@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itineraris</title>
+  </head>
+  <body>
+    <script>
+        // Rutas a las carpetas que contienen los archivos parciales
+        const headerPath = './header/';
+        const footerPath = './footer/';
+
+        // Cargar el encabezado
+        fetch(headerPath + 'Header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.querySelector('body').insertAdjacentHTML('afterbegin', html);
+            });
+
+        // Cargar el pie de página
+        fetch(footerPath + 'footer-itirenaris.html')
+            .then(response => response.text())
+            .then(html => {
+                document.querySelector('body').insertAdjacentHTML('beforeend', html);
+            });
+    </script>
+
+    <table> <!-- Red Mataró cabecera-->
+      <td>
+        <h1 style="color: red;">Red</h1>
+      </td>
+      <td>
+        <h1>Mataró</h1>
+      </td>
+    </table>
+    <br>
+    <div style="justify-content: center; display: flex;">
+      <div class="btn-group"> <!--busqueda-->
+        <a href="#" class="btn">Itineraris</a>
+        <a href="#" class="btn">Allotjaments</a>
+      </div>
+    </div>
+  </body>
+</html>

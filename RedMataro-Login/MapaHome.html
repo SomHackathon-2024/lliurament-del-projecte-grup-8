@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home - RedMataro</title>
+        <link rel="stylesheet"
+            href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+        <link rel="stylesheet"
+            href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <link rel="stylesheet" href="css/mapa.css" />
+    </head>
+    <body>
+        <div id="mapa"></div>
+        <script src="js/mapa.js"></script>
+        <script>
+// Crear y agregar marcadores para cada restaurante
+restaurantes.forEach(restaurante => {
+    L.marker([restaurante.latitud, restaurante.longitud]).addTo(mymap)
+        .bindPopup(restaurante.nombre);
+});
+// Llamamos lo mismo para el resto de constantes
+explorador.forEach(restaurante => {
+    L.marker([restaurante.latitud, restaurante.longitud]).addTo(mymap)
+        .bindPopup(restaurante.nombre);
+});
+
+familia.forEach(restaurante => {
+    L.marker([restaurante.latitud, restaurante.longitud]).addTo(mymap)
+        .bindPopup(restaurante.nombre);
+});
+
+joven.forEach(restaurante => {
+    L.marker([restaurante.latitud, restaurante.longitud]).addTo(mymap)
+        .bindPopup(restaurante.nombre);
+});
+relax.forEach(restaurante => {
+    L.marker([restaurante.latitud, restaurante.longitud]).addTo(mymap)
+        .bindPopup(restaurante.nombre);
+});
+botigues.forEach(restaurante => {
+    L.marker([restaurante.latitud, restaurante.longitud]).addTo(mymap)
+        .bindPopup(restaurante.nombre);
+});
+bicing.forEach(restaurante => {
+    L.marker([restaurante.latitud, restaurante.longitud]).addTo(mymap)
+        .bindPopup(restaurante.nombre);
+});
+
+        </script>
+    </body>
+</html>
